@@ -1,0 +1,10 @@
+import Link from 'next/link';
+import {Portfolio,Workflow} from "../portfolio-parts";
+import ServiceDetails from '../service-details';
+import type { Metadata } from "next";
+import { pageMetadata } from '../../lib/seo';
+import { Header,Footer,Contact,ServiceNav } from "../site-parts";
+export const metadata:Metadata=pageMetadata({title:'대전 조경관리·조경 서비스 | 조이플라워',description:'대전 조경관리 상담, 조이플라워. 관리할 조경 구역의 위치·면적·식물 상태와 희망 작업을 알려주세요. 현장 확인 후 작업 가능 범위와 방문 일정을 협의합니다.'}, '/landscape');
+export default function Page(){return <><Header/><main className="detail-page"><div className="breadcrumb"><Link prefetch={false} href="/">홈</Link><span>/</span><span>조경관리</span></div><ServiceNav current="landscape"/>   <section id="landscape" className="landscape-band"><div className="section secondary-service"><div className="service-title"><p className="eyebrow">03 · LANDSCAPE CARE</p><h1>대전 조경관리</h1><p className="service-statement">가꾸는 손길이 만드는<br/>초록의 일상.</p></div><div className="service-body"><p className="lead">대전 기반의 조이플라워가 관리할 조경 구역과 식물의 상태를 먼저 살펴봅니다. 건물 주변·매장 외부·정원 등 관리가 필요한 위치와 정리가 필요한 부분을 알려주세요. 현장 환경을 바탕으로 작업 가능 범위와 방문 일정을 상담합니다.</p><dl><div><dt>현장 확인</dt><dd>위치, 조경 면적, 식물과 시설의 상태</dd></div><div><dt>관리 범위</dt><dd>필요한 작업과 우선 관리할 부분</dd></div><div><dt>관리 방식</dt><dd>일회성·정기관리 희망 여부와 방문 주기 협의</dd></div></dl><p className="service-note">작업 가능 여부와 구체적인 관리 항목은 현장 확인 후 협의합니다.</p><a className="button gold" href="/inquiry?service=landscape">조경관리 상담 안내</a></div></div></section>
+<ServiceDetails service="landscape"/><Portfolio service="landscape"/><Workflow service="landscape"/>   <section className="section process"><div className="section-heading"><div><p className="eyebrow">BEFORE YOU ASK</p><h2>조경관리 상담 전 준비사항</h2></div><p>빠르고 정확한 상담을 위한 세 가지.</p></div><ol><li><span>01</span><div><h3>현장 위치와 사진</h3><p>현장 지역, 실내·외 여부와 공간 사진을 준비해주세요.</p></div></li><li><span>02</span><div><h3>필요한 관리와 주기</h3><p>현재 식물 상태와 필요한 작업, 희망 관리 주기를 알려주세요.</p></div></li><li><span>03</span><div><h3>희망 일정과 예산</h3><p>희망 작업일과 예산을 함께 전달해주세요.</p></div></li></ol></section>
+<Contact/></main><Footer/></>;}

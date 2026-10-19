@@ -1,0 +1,83 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/.vinext/
+/out/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+.dev.vars*
+
+# vercel
+.vercel
+
+# typescript
+next-env.d.ts
+/dist/
+/.wrangler/
+# Checkout-local execution profile and tool state; never publish them.
+/.sites-runtime/
+/.agents/
+/.codex/
+/outputs/
+/work/
+/deployment/production.json
+/deployment/admin-access.json
+
+# Private runtime, credentials, customer exports and generated artifacts
+**/node_modules/
+/build/
+*.tsbuildinfo
+*.log
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.sqlite*
+*.db
+*.db-*
+*.dump
+*.bak
+*.backup
+*.csv
+*.tsv
+/backups/
+/exports/
+/data/
+/.aws/
+/.ssh/
+/.migration-report/
+/.migration-test-state/
+# Local deployment records contain account/access details; keep them locally.
+/deployment/
+# Existing setup notes/reports may contain private operational information.
+/*-SETUP.md
+/*-REPORT.md
+/PORTFOLIO-ADD-GUIDE.md
+/WORKERS-DEV-READINESS.md
+/VSCode-START.txt

@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1791545838275,
+      "tag": "0000_inquiries",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791547567034,
+      "tag": "0001_admin_status",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791592125054,
+      "tag": "0002_inquiry_notifications",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791592909523,
+      "tag": "0003_notification_channels",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791599300968,
+      "tag": "0004_sms_notifications",
+      "breakpoints": true
+    }
+  ]
+}
